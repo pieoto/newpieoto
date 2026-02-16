@@ -679,3 +679,35 @@ a {
   opacity: 1;
   text-decoration: underline;
 }
+/* =========================
+   MOBILE HERO LEFT ALIGN FIX
+   ========================= */
+@media (max-width: 900px) {
+
+  .hero-text {
+    text-align: left !important;
+  }
+
+  .hero-text p {
+    margin: 0;
+    margin-bottom: 22px;
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero-buttons .btn {
+    width: auto;
+    max-width: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+}
+
